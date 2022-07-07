@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.bg1 {
+    background-color: #f9f9f9;
+}
+
+.bg2 {
+    background-color: #f1f1f1;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    background-image: url("../img/header_new.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-bottom: 4px solid transparent;
+    transition: all 225ms ease-in-out;
+}
+
+nav a:hover {
+    border-bottom: 4px solid #ffffff;
+    transition: all 225ms ease-in-out;
+}
+
+/*
+.header-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+*/
+
+.header-content {
+    background-color: rgba(72, 120, 212, 0.42);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button a {
+    background-color: rgb(250, 187, 120);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: #ffffff;
+    color: rgb(250, 187, 120);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow img {
+    width: 45px;
+    object-fit: contain;
+}
+
+.menubar {
+    position: absolute;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menubar img {
+    width: 170px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+}
+
+.explain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.explain-content {
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explain-content img {
+    background-color: rgb(64, 224, 208);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+.founders {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.founders-content {
+    max-width: 250px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.founders-content img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+    text-align-last: none;
+}
+
+.text-gray {
+    color: #808080;
+}
+
+.apply {
+    color: #ffffff;
+    background-image: url("../img/pexels-guduru-ajay-bhargav-948273.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.apply-content {
+    background-color: rgba(72, 120, 212, 0.42);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apply-content p {
+    text-align: center;
+
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #545454;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.footer img {
+    padding-right: 30px;
+}
+
+
+
+@media(max-width: 910px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .header-content h1,
+    p {
+        text-align: center;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .explain,
+    .founders {
+        max-width: 100vh;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apply-content p {
+        max-width: 250px;
+    }
+
+    .footer {
+        color: #ffffff;
+        background-color: #545454;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .footer-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
